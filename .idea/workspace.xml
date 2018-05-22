@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04b42f91-4b9d-4f06-968e-b03330e8e100" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/for_dict_challenges.py" beforeDir="false" afterPath="$PROJECT_DIR$/for_dict_challenges.py" afterDir="false" />
-    </list>
+    <list default="true" id="04b42f91-4b9d-4f06-968e-b03330e8e100" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +89,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.for_dict_challenges">
+  <component name="RunManager" selected="Python.for_challenges">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="lesson1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,8 +150,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.for_dict_challenges" />
         <item itemvalue="Python.for_challenges" />
+        <item itemvalue="Python.for_dict_challenges" />
       </list>
     </recent_temporary>
   </component>

@@ -13,7 +13,7 @@ for i in names:
 
 names = ['Оля', 'Петя', 'Вася', 'Маша']
 # ???
-print('Задание 2:')
+print('\nЗадание 2:')
 
 for i in names:
     print("{}, длина: {}шт.".format(i, len(i)))
@@ -29,7 +29,7 @@ is_male = {
 }
 names = ['Оля', 'Петя', 'Вася', 'Маша']
 # ???
-print('Задание 3:')
+print('\nЗадание 3:')
 
 for i in is_male:
     print("{} {}".format(i, 'М' if is_male[i] else 'Ж'))
@@ -46,7 +46,7 @@ groups = [
   ['Оля', 'Петя', 'Гриша'],
 ]
 # ???
-print('Задание 4:')
+print('\nЗадание 4:')
 
 print('Всего групп: {}'.format(len(groups)))
 count = 0
@@ -66,7 +66,7 @@ groups = [
   ['Оля', 'Петя', 'Гриша'],
 ]
 # ???
-print('Задание 5:')
+print('\nЗадание 5:')
 
 count = 0
 for i in groups:
