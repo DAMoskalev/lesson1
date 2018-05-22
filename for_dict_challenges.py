@@ -35,33 +35,32 @@ students = [
     {'first_name': 'Петя'},
     {'first_name': 'Маша'},
     {'first_name': 'Маша'},
-    {'first_name': 'Петя'},
+    {'first_name': 'Ваня'},
 ]
 
-print('Задание 2:')
+print('\nЗадание 2:')
 
 stud_list = []
-for i in students:  #список учеников
+for i in students:  # список учеников
     stud_list.append(i.get('first_name'))
 
 stud_list.sort()
-print(stud_list)
 
-max_entry = ''
-count = 0
 
-for i in stud_list:  #максимальное количество совпадений
-    if stud_list.count(i) > count:
-        count = stud_list.count(i)
+def max_entry(s_list):
+    count = 0
+    for i in s_list:  # максимальное количество совпадений
+        if s_list.count(i) > count:
+            count = s_list.count(i)
+    result_list = []
+    for i in s_list:
+        if s_list.count(i) == count:
+            if '{} {}'.format(i, count) not in result_list:
+                result_list.append('{} {}'.format(i, count))
+    return result_list
 
-result_list = []
-for i in stud_list:
-    if stud_list.count(i) == count:
-        if '{} {}'.format(i, count) not in result_list:
-            result_list.append('{} {}'.format(i, count))
-print(result_list)
 
-for i in result_list:
+for i in max_entry(stud_list):
     print(i)
 # ???
 
@@ -82,6 +81,14 @@ school_students = [
     ]
 ]
 # ???
+print('\nЗадание 3:')
+
+for i in school_students:
+    stud_list = []
+    for j in i:
+        stud_list.append(j.get('first_name'))
+    for j in max_entry(stud_list):
+        print(j)
 
 # Пример вывода:
 # Самое частое имя в классе 1: Вася
@@ -101,10 +108,20 @@ is_male = {
     'Миша': True,
 }
 # ???
-
+print('\nЗадание 4:')
 # Пример вывода:
 # В классе 2a 2 девочки и 0 мальчика.
 # В классе 3c 0 девочки и 2 мальчика.
+
+for i in school:
+    male = 0
+    female = 0
+    for j in i.get('students'):
+        if is_male.get(j.get('first_name')):
+            male += 1
+        else:
+            female +=1
+    print('В классе {} {} девочек и {} мальчиков'.format(i.get('class'), female, male))
 
 
 # Задание 5
@@ -120,6 +137,31 @@ is_male = {
     'Миша': True,
 }
 # ???
+print('\nЗадание 5:')
+for i in school:
+    m_count = 0
+    f_count = 0
+    for j in i.get('students'):
+        if is_male.get(j.get('first_name')):
+            m_count += 1
+        else:
+            f_count += 1
+    i['m_count'] = m_count
+    i['f_count'] = f_count
+
+f_max = ''
+m_max = ''
+f_tmp = 0
+m_tmp = 0
+for i in school:
+    if int(i.get('m_count')) > m_tmp:
+        m_tmp = int(i.get('m_count'))
+        m_max = i.get('class')
+    if int(i.get('f_count')) > f_tmp:
+        f_tmp = int(i.get('f_count'))
+        f_max = i.get('class')
+print('Девочек больше в {}'.format(f_max))
+print('Мальчиков больше в {}'.format(m_max))
 
 # Пример вывода:
 # Больше всего мальчиков в классе 3c

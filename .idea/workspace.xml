@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04b42f91-4b9d-4f06-968e-b03330e8e100" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/zgn_bot/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/zgn_bot/bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/for_dict_challenges.py" beforeDir="false" afterPath="$PROJECT_DIR$/for_dict_challenges.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +25,8 @@
       <file leaf-file-name="for_dict_challenges.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/for_dict_challenges.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="453">
+              <caret line="161" column="30" lean-forward="true" selection-start-line="161" selection-start-column="30" selection-end-line="161" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -200,7 +200,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -220,8 +220,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/for_dict_challenges.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="453">
+          <caret line="161" column="30" lean-forward="true" selection-start-line="161" selection-start-column="30" selection-end-line="161" selection-end-column="30" />
         </state>
       </provider>
     </entry>
