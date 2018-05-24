@@ -1,0 +1,34 @@
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.updater - WARNING - Exiting immediately!
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/zgn/git/learn-python/projects/lesson1/venv/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/Users/zgn/git/learn-python/projects/lesson1/venv/lib/python3.6/site-packages/telegram/ext/commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/Users/zgn/git/learn-python/projects/lesson1/zgn_bot/bot.py", line 40, in planet
+    update.message.reply_text(ephem.constellation(earth))
+NameError: name 'earth' is not defined
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/zgn/git/learn-python/projects/lesson1/venv/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/Users/zgn/git/learn-python/projects/lesson1/venv/lib/python3.6/site-packages/telegram/ext/commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/Users/zgn/git/learn-python/projects/lesson1/zgn_bot/bot.py", line 40, in planet
+    update.message.reply_text(ephem.constellation(earth))
+NameError: name 'earth' is not defined
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Users/zgn/git/learn-python/projects/lesson1/venv/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/Users/zgn/git/learn-python/projects/lesson1/venv/lib/python3.6/site-packages/telegram/ext/commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/Users/zgn/git/learn-python/projects/lesson1/zgn_bot/bot.py", line 40, in planet
+    earth = ephem.Earth()
+AttributeError: module 'ephem' has no attribute 'Earth'
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
